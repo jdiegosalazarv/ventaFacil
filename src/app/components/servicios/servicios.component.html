@@ -1,0 +1,19 @@
+<div class="container" *ngFor="let servicio of servicios; let i = index">
+  <!-- <div>
+    <h2>{{servicio.categoria}}</h2>
+    <h3>{{servicio.nombre}}</h3>
+    <p>{{servicio.precio | currency: 'COL': 'symbol': '1.0-0'}}</p>
+  </div> -->
+
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{servicio.categoria}}</h5>
+      <p class="card-text">{{servicio.nombre}}</p>
+      <p class="card-text">{{servicio.precio | currency: 'COL': 'symbol': '1.0-0'}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+
+
